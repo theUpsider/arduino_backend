@@ -64,8 +64,10 @@ def add_data():
 if __name__ == "__main__":
     # argparse with host, port, debug:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--host", type=str, default="localhost")
+    parser.add_argument("--host", type=str, default="localhost")  # host "192.168.2.132"
     parser.add_argument("--port", type=int, default=5000)
+    parser.add_argument("--online", type=bool, default=False)
     parser.add_argument("--debug", type=bool, default=False)
     args = parser.parse_args()
-    app.run(host=args.host, port=args.port, debug=args.debug)
+    host = "0.0.0.0" if args.online else args.host
+    app.run(host=host, port=args.port, debug=args.debug)
