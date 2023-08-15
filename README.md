@@ -9,8 +9,8 @@ This Flask application receives sensor data (**humidity and temperature**) throu
 First, clone the repository to your local machine:
 
 ```bash
-git clone <repository-url>
-cd <repository-dir>
+git clone https://github.com/theUpsider/arduino_backend.git
+cd arduino_backend
 ```
 
 ### 2. Set up a Virtual Environment
