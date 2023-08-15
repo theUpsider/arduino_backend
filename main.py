@@ -134,7 +134,7 @@ def get_data_by_range(start_date, end_date):
 if __name__ == "__main__":
     # argparse with host, port, debug:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--host", type=str, default="localhost")  # host "192.168.2.132"
+    parser.add_argument("--host", type=str, default="localhost")
     parser.add_argument("--port", type=int, default=5000)
     parser.add_argument("--online", action="store_true")
     parser.add_argument("--debug", type=bool, default=False)
