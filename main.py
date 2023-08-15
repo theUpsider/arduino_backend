@@ -1,11 +1,7 @@
-import os
 from flask import Flask, request, jsonify
-import gradio as gr
 import sqlite3
 import argparse
 from datetime import datetime
-
-from matplotlib import pyplot as plt
 
 app = Flask(__name__)
 
